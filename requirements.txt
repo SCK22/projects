@@ -9,5 +9,5 @@ Django==2.1.7
 django-heroku==0.3.1
 django-tinymce==2.8.0
 djangorestframework==3.9.2
-tensorflow==1.13.1
+tensorflow==1.15.0
 
