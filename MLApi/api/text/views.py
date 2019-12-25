@@ -1,11 +1,10 @@
 import json
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from nltk.tokenize import word_tokenize
 from django.http import HttpResponseForbidden
-
 import spacy
-nlp = spacy.load("en_core_web_md")
+import en_core_web_md
+nlp = en_core_web_md.load()
 
 def cannot_handle_request(r):
     return HttpResponseForbidden(content="Request type {} not supported".format(r.method))
